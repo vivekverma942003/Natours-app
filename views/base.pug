@@ -1,0 +1,45 @@
+html(lang="en")
+    head
+       block head 
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            link(rel='stylesheet', href='/css/style.css')
+            link(rel="shortcut icon", href="/img/favicon.png", type="image/png")
+            link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+            title Natours | #{title}
+    body 
+        // header
+        include _header
+
+        // content
+        //- main.main
+        //-     h1= tour
+        block content 
+            h1 this is the place holder heading
+        
+        // footer
+        include _footer
+        //- script(src="/js/mapbox.js") 
+        //- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" ></script>
+        //- //- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+        //- script(src="/js/login.js") 
+        script(src='/js/bundle.js')
+
+
+
+
+
+        //- h1= tour  
+        //- //- using the local(VARIABLE) that set in the render option to render like i set the value of the tour so now this tour is render in the webpage 
+        //- //- h1 My name is ujjwal
+        //- //- comment in the pug template if you use (//) it mean this comment can show in the rendered html file but if use(//-) then comment donot show in the html file 
+        //- h2= user.toUpperCase()
+        //- //- we can use simple javascript here
+        //- //- h2=(expression using equals sign) is buffered code
+        //- //- code start with hyphen(-) is known as unbuffered code as it used to define a variable which can be ised in the further in the code
+        //- -const x=9;
+        //- h2=x
+        //- //- #{localName} this is known as interpolation and work same as template string of the Js
+        //- p hey folke
